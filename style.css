@@ -1,11 +1,11 @@
+/* style.css - GenoFrisk25 Network poprawiony */
+
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  text-align: center;
   margin: 0;
   padding: 0;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABFElEQVR42mNgoAVQJjBkMiQGLAxMDP7z3DADxDAw8f8GKMgDcZGJhYWhgEMcmHwMDEzOwACJmBkZGUA2AEmDAwMDHx6eHkaGAChLxEyMjJwcHBoaWxgYoIswJiYmBnI9AI0MDEzMTCxsbLq0tJSTkoCCYJcFMhYWFoyMjBRsbGw86OjrqCwtLMQA0nULuDQ2NmcHBwddXV3eABHHgNEpKyv70dHR9eXl5V5WVlZ1cXFxeHh4U5Tk5MTEhIiLi4uLKysqak5OTnIAAAAYYFhIMLlCoA8X7AwMKCi1QjgwMDi4qKur4+fnFxA9VUVIT9AQUjY5GqBAx0UEgUwAAAABJRU5ErkJggg==') repeat;
-  background-size: cover;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #ffffff;
-  text-align: center;
 }
 
 .container {
@@ -13,46 +13,63 @@ body {
 }
 
 h1 {
-  font-size: 60px;
-  margin-bottom: 10px;
-  animation: pulse 2s infinite;
-}
-
-h2 {
-  font-size: 40px;
-  color: #00ccff;
+  color: #003366; /* ciemny granat */
+  font-size: 48px;
+  font-weight: bold;
 }
 
 p {
+  color: #333333; /* grafitowy tekst */
   font-size: 20px;
-  margin: 5px 0;
+  text-align: center;
+}
+
+h2 {
+  color: #00bfff;
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 30px;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 30px;
-  background: #00ccff;
-  color: #111;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 18px;
+  color: #000000;
+  background-color: #00d4ff;
+  border: none;
   border-radius: 30px;
-  transition: background 0.3s, transform 0.3s;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn:hover {
-  background: #00aacc;
+  background-color: #00aacc;
   transform: scale(1.05);
 }
 
 footer {
   margin-top: 50px;
   font-size: 14px;
-  color: #bbb;
+  color: #aaaaaa;
 }
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
